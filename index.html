@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Welcome to My Space</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./styles.css'>
+    <script src='main.js'></script>
+
+    <!-- Boxicon Icons Import -->    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/close.css' rel='stylesheet'> 
+    <!--Iconscout Icons-->
+    <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"> -->
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+
+</head>
+<body>
+
+    <header class="header" id="header"> 
+        <nav class="nav container">
+                <a href="#" class="nav__logo">Darshan</a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item"><a href="#home" class="nav__link"><i class='bx bx-home-alt nav__icon' ></i> Home</a></li>
+                    <li class="nav__item"><a href="#home" class="nav__link"><i class='bx bx-user nav__icon' ></i>About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link"><i class='bx bx-file nav__icon' ></i>Skills</a></li>
+                    <li class="nav__item"><a href="#experience" class="nav__link"><i class='bx bx-terminal nav__icon'></i>Experience</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link"><i class='bx bx-briefcase nav__icon'></i>Projects</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link"><i class='bx bx-send nav__icon'></i>Contact me</a></li>
+                </ul>
+                <i class="gg-close nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt' ></i></box-icon>
+                    <!-- style='color:#6e57e0' -->
+                </div>
+            </div>
+
+        
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+         <!-- HOME -->
+          <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/ananddarshan/" target="_blank" class="home__social-icon">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                        <a href="https://github.com/Darshan-1820" target="_blank" class="home__social-icon">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                    </div>
+                    <div class="home__img">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                
+                                <image class="home__blob-img" href="./img/display_4.png" x="25" y="7"/>
+                            </g>
+                        </svg>   
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home_title">Full-Stack Web Developer</h1>
+                        <p class="home__description">Hi, I'm Darshan Anand. A passionate learner, a Full-stack Web Developer and an undergrad Computer Science student.</p>
+                        <a href="#contact" class="button button--flex">
+                            Contact Me  <i class='bx bx-send button__icon'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class='bx bx-mouse-alt home__scroll-mouse'></i>
+                        <span class="home__scroll-name">Scroll down</span>
+                            <i class='bx bx-down-arrow-alt home__scroll-arrow'></i>
+                    </a>
+                </div>
+
+            </div>
+          </section>
+
+          <!---------------------------- SKills -->
+
+          <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <!-- <span class="section__subtitle"></span> -->
+             <div class="skills__container container grid">
+                <div>
+                    
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__html"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__number">72%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__css"></span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">Javascript</h3>
+                                    <span class="skills__number">65%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__js"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__number">75%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__react"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">Node JS</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__node"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__title">
+                                    <h3 class="skills__name">Java</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__java"></span>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                </div>
+             </div>
+          </section>
+          
+
+          <!--------------- Experience ---------------------->
+
+          <section class="experience section" id="experience">
+            <h2 class="section__title">Experience</h2>
+            <div class="experience__container container">
+                <div class="experience__content">
+                    <div class="experience__data">
+                        <h3 class="experience__position">Front end Intern</h3>
+                        <span class="experience__company">TechPlement</span>
+                        <span class="experience__duration">June 1, 2024 - June 30, 2024</span>
+                        <ul class="experience__tasks">
+                            <li>Developed and maintained responsive web pages using HTML, CSS, and JavaScript.</li>
+                            <li>Collaborated in a team of 7 with back-end developers and designers to discuss and create user-friendly projects.</li>
+                            <li>Developed a web-based tool that helps users build professional resumes.</li>
+                            <li>Developed a responsive Weather app using the OpenWeather API to fetch user's location temperature and a 5-day forecast.</li>
+                        </ul>
+                    </div>
+        
+                    <div class="experience__data">
+                        <h3 class="experience__position">IN HOUSE SUMMER TRAINING</h3>
+                        <span class="experience__company">Chandigarh University</span>
+                        <span class="experience__duration">June - July, 2023</span>
+                        <ul class="experience__tasks">
+                            <li>Built a College Admission Chatbot that takes users' queries about admission and courses and provides adequate responses. Focused on NLP, Python, and Machine Learning.</li>
+                            <li>Built a Video-audio conversion model that manipulates video and audio. Focused on Python, MoviePy Library, and SpeechRecognition Library.</li>
+                            <li>Built a Speech Recognition model using Google's Speech Recognition API that captures sound from the microphone and converts it into text. Focused on Python, SpeechRecognition Library, and Audio Processing.</li>
+                            <li>Built a mini project on Text Summarizer that summarizes a text document and provides an informative summary. Focused on NLP and Python.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-------------------- Projects --------------------------->
+        <section class="projects section" id="projects">
+            <h2 class="section__title">Projects</h2>
+            <div class="projects__container container">
+                <div class="project" id="project1">
+                    <a href="https://github.com/Darshan-1820/twitter-clone" class="project__link" target="_blank">Github</a>
+                    <h3 class="project__title">Twitter Clone</h3>
+                    <p class="project__description">A clone of the popular social media platform Twitter, built with modern web technologies.</p>
+                </div>
+                <div class="project" id="project2">
+                    <a href="https://github.com/Darshan-1820/Simple-Weather-Dashboard" class="project__link" target="_blank">Github</a>
+                    <h3 class="project__title">Weather Dashboard</h3>
+                    <p class="project__description">
+                        A simple Weather Dashboard app, which gives you the temperature based on your location. Additionally, you can search for any city. It provides humidity, wind speed, and night/day info.
+                    </p>
+                    <i class='bx bx-chevron-down' onclick="toggleProjectDetails('project2Details', this)"></i>
+                    <div class="project__details" id="project2Details">
+                        <ul>
+                            <li>Location-based weather information</li>
+                            <li>Search bar for any location</li>
+                            <li>Temperature in degrees Celsius</li>
+                            <li>Day Name and Time (12 hrs)</li>
+                            <li>Time of the day like noon, night, morning</li>
+                            <li>Humidity in percentages</li>
+                            <li>Wind speed in km/hr</li>
+                            <li>5-day weather forecast</li>
+                            <li>Responsive web design</li>
+                        </ul>
+                        <i class='bx bx-chevron-up' onclick="toggleProjectDetails('project2Details', this)"></i>
+                    </div>
+                </div>
+                <div class="project" id="project3">
+                    <a href="https://github.com/Darshan-1820/text_summarization" class="project__link" target="_blank">Github</a>
+                    <h3 class="project__title">Text Summarizer</h3>
+                    <p class="project__description">Created a Text-Summarizer that could take text documents as inputs, pre-process it using NLP techniques, and use Neural Net to summarize them adequately.</p>
+                </div>
+                <div class="project" id="project4">
+                    <a href="https://github.com/Darshan-1820/Project_ChatBot" class="project__link" target="_blank">Github</a>
+                    <h3 class="project__title">College Chatbot</h3>
+                    <p class="project__description">
+                        Created a chatbot trained on the University's Courses, contact information, List of Subjects offered in some of the streams, and the Semester fees that could answer queries regarding the admission procedure and courses offered at Chandigarh University.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+
+
+
+        <!--------------------- Contact --------------------->
+        <section class="contact section" id="contact">
+            <div class="container grid">
+                <!-- Left Column: Contact Form -->
+                <div>
+                    <form action="#" class="contact__form grid">
+                        <h2 class="section__title">Contact Me</h2>
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="name" class="contact__label">Name</label>
+                                <input type="text" id="name" name="name" class="contact__input" required>
+                            </div>
+                            <div class="contact__content">
+                                <label for="email" class="contact__label">Email</label>
+                                <input type="email" id="email" name="email" class="contact__input" required>
+                            </div>
+                            <div class="contact__content">
+                                <label for="message" class="contact__label">Message</label>
+                                <textarea id="message" name="message" rows="5" class="contact__input" required></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="button button--flex">
+                            Send Message <i class='bx bx-send'></i>
+                        </button>
+                    </form>
+                </div>
+                <!-- Right Column: Contact Info -->
+                <div class="contact__info">
+                    <h2 class="section__title">Contact Information</h2>
+                    <ul class="contact__list">
+                        <li class="contact__item">
+                            <i class='bx bxl-gmail contact__icon'></i>
+                            <span class="contact__text">addarshanmohan99@gmail.com</span>
+                        </li>
+                        <li class="contact__item">
+                            <i class='bx bxl-linkedin contact__icon'></i>
+                            <a href="https://www.linkedin.com/in/ananddarshan" target="_blank" class="contact__text">LinkedIn Profile</a>
+                        </li>
+                        <li class="contact__item">
+                            <i class='bx bx-map-pin contact__icon'></i>
+                            <span class="contact__text">Mohali, Chandigarh</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        
+
+    </main>
+
+
+    <!-------------------- Footer --------------------------->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div>
+                <h1 class="footer__title">Darshan Anand</h1>
+                <!-- <span class="footer__subtitle">Web Developer</span> -->
+            </div>
+            <ul class="footer__links grid">
+                <li><a href="#home" class="footer__link">Home</a></li>
+                <li><a href="#about" class="footer__link">About</a></li>
+                <li><a href="#skills" class="footer__link">Skills</a></li>
+                <li><a href="#projects" class="footer__link">Projects</a></li>
+                <li><a href="#contact" class="footer__link">Contact</a></li>
+            </ul>
+            <div class="footer__socials">
+                <a href="mailto:addarshanmohan99@gmail.com" class="footer__social"><i class='bx bxl-gmail'></i></a>
+                <a href="https://www.linkedin.com/in/ananddarshan" target="_blank" class="footer__social"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Darshan-1820" target="_blank" class="footer__social"><i class='bx bxl-github'></i></a>
+            </div>
+        </div>
+    </footer>
+    
+
+
+
+
+    <!--///////// Scroll Reveal //////////////////-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Main Javascript File -->
+    <script src="./main.js"></script>
+    
+</body>
+</html>
