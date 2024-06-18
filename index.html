@@ -15,6 +15,13 @@
     <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"> -->
     <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
 
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init('Taxt7JC3jPtkKDt7W');
+        })();
+    </script>
+
 </head>
 <body>
 
@@ -375,67 +382,64 @@
 
 
         <!--------------------- Contact --------------------->
-        <section class="contact section" id="contact">
-            <h2 class="section__title">Contact Me</h2>
-            <span class="section__subtitle">Get in touch</span>
+       <!--------------------- Contact --------------------->
+<section class="contact section" id="contact">
+    <h2 class="section__title">Contact Me</h2>
+    <span class="section__subtitle">Get in touch</span>
 
-            <div class="contact__container container grid">
+    <div class="contact__container container grid">
+        <div>
+            <div class="contact__information">
+                <i class='bx bx-envelope contact__icon'></i>
                 <div>
-                    <div class="contact__information">
-                        <i class='bx bx-envelope contact__icon'></i>
-                        
-                        <div>
-                            <h3 class="contact__title">Email</h3>
-                            <span class="contact__subtitle">addarshanmohan99@gmail.com</span>
-                        </div>
-                        
-                    </div>
-
-                    <div class="contact__information">
-                        <i class='bx bxl-linkedin contact__icon'></i>
-                        
-                        <div>
-                            <h3 class="contact__title">Linkedin</h3>
-                            <span class="contact__subtitle"><a href="https://www.linkedin.com/in/ananddarshan/" target="_blank">ananddarshan</a></span>
-                        </div>
-                    </div>
-
-                    <div class="contact__information">
-                        <i class='bx bxs-edit-location contact__icon'></i>
-                        
-                        <div>
-                            <h3 class="contact__title">Location</h3>
-                            <span class="contact__subtitle">Chandigarh-India</span>
-                        </div>
-                    </div>
+                    <h3 class="contact__title">Email</h3>
+                    <span class="contact__subtitle">addarshanmohan99@gmail.com</span>
                 </div>
-
-                <form class="contact__form grid" onsubmit=" sendEmail(); reset(); return false;" >
-                    <div class="contact__inputs grid">
-                        <div class="contact__content">
-                            <label for="name" class="contact__label">Name</label>
-                            <input type="text" class="contact__input" id="name">
-                        </div>
-                        <div class="contact__content">
-                            <label for="email" class="contact__label">Email</label>
-                            <input type="email" class="contact__input" id="email">
-                        </div>
-                    </div>
-                    <div class="contact__content">
-                        <label for="msg" class="contact__label">Message</label>
-                        <textarea name="msg" id="" cols="0" rows="7" class="contact__input" id="msg"></textarea>
-                    </div>
-
-                    <div>
-                        <a href="#" class="button button--flex">
-                            Send Message
-                            <i class='bx bx-send button__icon'></i>
-                        </a>
-                    </div>
-                </form>
             </div>
 
-        </section>
+            <div class="contact__information">
+                <i class='bx bxl-linkedin contact__icon'></i>
+                <div>
+                    <h3 class="contact__title">Linkedin</h3>
+                    <span class="contact__subtitle"><a href="https://www.linkedin.com/in/ananddarshan/" target="_blank">ananddarshan</a></span>
+                </div>
+            </div>
+
+            <div class="contact__information">
+                <i class='bx bxs-edit-location contact__icon'></i>
+                <div>
+                    <h3 class="contact__title">Location</h3>
+                    <span class="contact__subtitle">Chandigarh-India</span>
+                </div>
+            </div>
+        </div>
+
+        <form class="contact__form grid" id="contactForm">
+            <div class="contact__inputs grid">
+                <div class="contact__content">
+                    <label for="name" class="contact__label">Name</label>
+                    <input type="text" class="contact__input" id="name" required>
+                </div>
+                <div class="contact__content">
+                    <label for="email" class="contact__label">Email</label>
+                    <input type="email" class="contact__input" id="email" required>
+                </div>
+            </div>
+            <div class="contact__content">
+                <label for="message" class="contact__label">Message</label>
+                <textarea name="msg" id="message" cols="0" rows="7" class="contact__input" required></textarea>
+            </div>
+
+            <div>
+                <button type="submit" class="button button--flex">
+                    Send Message
+                    <i class='bx bx-send button__icon'></i>
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
         
         
 
@@ -488,36 +492,8 @@
         <i class='bx bx-up-arrow-alt scrollup__icon'></i>
     </a>
 
-    <!-- To send an email directly from my website's contact form using JavaScript. Smtp js is used.  -->
-<!--     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-
-        function sendEmail(){
-
-            const name = document.getElementById("name");
-            const email = document.getElementById("email");
-            const msg = document.getElementById("msg");
-
-            let ebody = `
-            <b> Name: </b> ${name.value}
-            <br/>
-            <b> Email: </b> ${email.value}
-            <br/>
-            <b> Description: </b> ${msg.value}
-            `
-
-            Email.send({
-                SecureToken : "Your_token",
-                To : 'email',
-                From : "email",
-                Subject : "Portfolio Contact",
-                Body : ebody
-            }).then(
-                message => alert(message)
-            );
-        }
-
-    </script> -->
+    
+    
     <!--///////// Scroll Reveal //////////////////-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
