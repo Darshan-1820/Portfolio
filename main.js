@@ -19,6 +19,41 @@
         });
     }
 
+
+     /*==================== CONTACT FORM ====================*/ 
+     const contactForm = document.getElementById('contactForm');
+     let formSubmitListenerAdded = false; // Flag to check if listener is added
+ 
+     if (contactForm && !formSubmitListenerAdded) {
+         contactForm.addEventListener('submit', function(event) {
+             event.preventDefault(); // Prevent the default form submission
+             console.log("Form submit event triggered");
+             SendMail();
+         });
+         formSubmitListenerAdded = true; // Set the flag to true after adding the listener
+     }
+ 
+     function SendMail() {
+         console.log("SendMail function called");
+         var params = {
+             from_name: document.getElementById("name").value,
+             email_id: document.getElementById("email").value,
+             message: document.getElementById("message").value
+         };
+ 
+         console.log("Sending email with params:", params);
+         emailjs.send("service_59wj3te", "template_dxo8cwk", params)
+             .then(function(res) {
+                 console.log("Email sent successfully", res.status);
+                 alert("Message Sent! " + res.status);
+                 contactForm.reset(); // Reset the form after the message is sent
+             })
+             .catch(function(err) {
+                 console.error("Failed to send message", err);
+                 alert("Failed to send message. Please try again later.");
+             });
+     }
+
     /*==================== REMOVE MENU MOBILE ====================*/
     const navLink = document.querySelectorAll('.nav__link');
 
@@ -111,6 +146,5 @@ themeButton.addEventListener('click', () => {
 //         icon.classList.add('bx-chevron-up');
 //     }
 // }
-
 
 
