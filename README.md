@@ -1,6 +1,6 @@
 # Portfolio
 
-A simple yet informative and responsive portfolio website based on https://github.com/bedimcode/ tutorial.
+A simple yet informative and responsive portfolio website based on https://github.com/bedimcode/ repository.
 
 What's new?
 
