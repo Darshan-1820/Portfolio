@@ -1,12 +1,10 @@
 # Portfolio
 
-A simple yet informative and responsive portfolio website based on https://github.com/bedimcode/ repository.
+A simple, informative and responsive portfolio website.
 
-What's new?
+Simple styles cater to more of a fresher's portfolio website. 
 
-Different styles cater to more of a fresher's portfolio website. 
-
-Cards added for the Experience section, with required CSS. 
+Cards added for the Experience section.
 
 Working contact form using EmailJs.
 
